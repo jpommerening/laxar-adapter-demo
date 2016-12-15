@@ -1,0 +1,18 @@
+[submodule "vendor/laxar"]
+	path = vendor/laxar
+	url = https://github.com/LaxarJS/laxar.git
+[submodule "vendor/laxar-uikit"]
+	path = vendor/laxar-uikit
+	url = https://github.com/LaxarJS/laxar-uikit.git
+[submodule "vendor/laxar-angular-adapter"]
+	path = vendor/laxar-angular-adapter
+	url = https://github.com/LaxarJS/laxar-angular-adapter.git
+[submodule "vendor/laxar-react-adapter"]
+	path = vendor/laxar-react-adapter
+	url = https://github.com/LaxarJS/laxar-react-adapter.git
+[submodule "vendor/laxar-vue-adapter"]
+	path = vendor/laxar-vue-adapter
+	url = https://github.com/LaxarJS/laxar-vue-adapter.git
+[submodule "vendor/laxar-elm-adapter"]
+	path = vendor/laxar-elm-adapter
+	url = https://github.com/jpommerening/laxar-elm-adapter.git

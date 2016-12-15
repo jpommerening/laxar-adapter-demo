@@ -1,0 +1,15 @@
+*~
+*.orig
+*.backup.json
+.idea
+.sass-cache
+/elm-stuff
+/var
+/node_modules
+/atlassian-ide-plugin.xml
+/bower_components
+/karma-output
+/npm-debug.log
+/ShopDemo-*.zip
+/spec-output
+/test-results.xml

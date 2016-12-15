@@ -1,0 +1,25 @@
+{
+  "layout": "default",
+  "areas": {
+    "main": [
+      {
+        "widget": "vue-demo-widget",
+        "features": {
+          "htmlText": "Hello, Vue!"
+        }
+      },
+      {
+        "widget": "elm-demo-widget",
+        "features": {
+          "htmlText": "Hello, Elm!"
+        }
+      },
+      {
+        "widget": "react-demo-widget",
+        "features": {
+          "htmlText": "Hello, React!"
+        }
+      }
+    ]
+  }
+}
