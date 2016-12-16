@@ -2,7 +2,8 @@ import ng from 'angular';
 
 Controller.$inject = [ '$scope' ];
 function Controller() {
-};
+}
 
-export default ng.module( 'angularDemoWidget', [] )
+// TODO: change laxar-angular-adapter so I can write "export default"
+module.exports = ng.module( 'angularDemoWidget', [] )
    .controller( 'AngularDemoWidgetController', Controller );

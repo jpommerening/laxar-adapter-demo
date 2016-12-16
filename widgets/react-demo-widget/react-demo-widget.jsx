@@ -1,15 +1,13 @@
-const injections = [ 'axContext', 'axReactRender' ];
-
-function create( context, render ) {
-   return {
-      onDomAvailable() {
-         return render( <strong dangerouslySetInnerHtml={ context.features.htmlText }></strong> );
-      }
-   };
-}
+import React from 'react';
 
 export default {
    name: 'reactDemoWidget',
-   injections,
-   create
+   injections: [ 'axContext', 'axReactRender' ],
+   create( context, render ) {
+      return {
+         onDomAvailable() {
+            return render( <strong dangerouslySetInnerHTML={{__html: context.features.htmlText }}></strong> );
+         }
+      };
+   }
 };

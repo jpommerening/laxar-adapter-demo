@@ -11,6 +11,7 @@ import * as vueAdapter from 'laxar-vue-adapter';
 import * as elmAdapter from 'laxar-elm-adapter';
 
 import artifacts from 'laxar-loader/artifacts?flow=main';
+console.log( artifacts );
 
 const config = {
    name: 'LaxarJS Adapter Demo',

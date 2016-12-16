@@ -3,9 +3,9 @@
   "areas": {
     "main": [
       {
-        "widget": "vue-demo-widget",
+        "widget": "angular-demo-widget",
         "features": {
-          "htmlText": "Hello, Vue!"
+          "htmlText": "Hello, Angular!"
         }
       },
       {
@@ -18,6 +18,12 @@
         "widget": "react-demo-widget",
         "features": {
           "htmlText": "Hello, React!"
+        }
+      },
+      {
+        "widget": "vue-demo-widget",
+        "features": {
+          "htmlText": "Hello, Vue!"
         }
       }
     ]
