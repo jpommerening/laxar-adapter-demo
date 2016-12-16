@@ -2,7 +2,7 @@
   "name": "laxar-adapter-demo",
   "private": true,
   "scripts": {
-    "prepublish": "webpack",
+    "prepublish": "webpack --progress --config webpack.config.dist.js",
     "start": "webpack-dev-server --inline --hot"
   },
   "devDependencies": {
