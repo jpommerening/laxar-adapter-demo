@@ -3,7 +3,8 @@ const webpack = require( 'webpack' );
 
 module.exports = {
    entry: {
-      main: './index.js'
+      main: [ './index.js' ],
+      vendor: [ 'laxar/polyfills', 'laxar' ]
    },
 
    output: {
@@ -13,6 +14,11 @@ module.exports = {
    },
 
    plugins: [
+      new webpack.optimize.CommonsChunkPlugin( {
+         name: 'vendor',
+         chunks: [ 'vendor' ],
+         children: true
+      } ),
       new webpack.SourceMapDevToolPlugin( {
          filename: '[name].js.map'
       } )
@@ -23,14 +29,26 @@ module.exports = {
          path.resolve( './node_modules' ),
          path.resolve( './vendor' )
       ],
-      extensions: [ '', '.js', '.jsx', '.vue', '.elm' ]
+      extensions: [ '', '.js', '.jsx', '.ts', '.tsx', '.vue', '.elm' ],
+      alias: {
+         'laxar-types': 'laxar-angular2-adapter/types.ts'
+      }
    },
 
    module: {
       loaders: [
+         {
+            test: /.spec.(jsx?|tsx?)$/,
+            loader: './vendor/laxar-mocks/spec-loader'
+         },
          {  // load JavaScript (and JSX) with babel
             test: /\.jsx?$/,
             loader: 'babel-loader',
+            exclude: /node_modules/
+         },
+         {  // load TypeScript (and TSX) with the TypeScript loader
+            test: /\.tsx?$/,
+            loader: 'ts-loader',
             exclude: /node_modules/
          },
          {  // load Vue components with the Vue loader

@@ -1,0 +1,18 @@
+{
+  "name": "angular2-demo-widget",
+  "description": "A simple demonstration of the structure of an angular2 widget",
+  "integration": {
+    "technology": "angular2",
+    "type": "widget"
+  },
+  "features": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "htmlText": {
+        "type": "string",
+        "default": ""
+      }
+    }
+  }
+}

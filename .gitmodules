@@ -16,3 +16,9 @@
 [submodule "vendor/laxar-elm-adapter"]
 	path = vendor/laxar-elm-adapter
 	url = https://github.com/jpommerening/laxar-elm-adapter.git
+[submodule "vendor/laxar-angular2-adapter"]
+	path = vendor/laxar-angular2-adapter
+	url = https://github.com/LaxarJS/laxar-angular2-adapter.git
+[submodule "vendor/laxar-mocks"]
+	path = vendor/laxar-mocks
+	url = https://github.com/LaxarJS/laxar-mocks.git
